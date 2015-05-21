@@ -4,7 +4,6 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import vehicle.Car;
-import vehicle.Motorcycle;
 import vehicle.Person;
 import vehicle.Truck;
 
@@ -32,17 +31,10 @@ public class testveh {
    	 b.setFirstName("b");
    	 NewTruck.setOwner(b);
    	 assertEquals(" truck person b", "b",NewTruck.getOwner().getFirstName());
-
-
-   	 
-   	 
-   	 Motorcycle NewMotorcycle= new Motorcycle();
-   	 NewMotorcycle.setHasSideCar(false);
-   
    	 
   	assertEquals(" Person a car has 4 doors", 4, NewCar.getNumberOfDoors());
   	assertEquals("truck by Person a has 2 axels",2, NewTruck.getNumberOfAxels());
- 	assertEquals("Motorcycle without a sidecar", false, NewMotorcycle.isHasSideCar());
+ 	
 
 	}
 
